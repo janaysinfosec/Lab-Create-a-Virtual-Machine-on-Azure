@@ -5,14 +5,14 @@ This lab guides me through creating a Virtual Machine (VM) on Microsoft Azure, c
 * Access to the Azure Portal https://portal.azure.com/
 
 # Step-by-Step Process
-1. Create a Resource Group
+**1. Create a Resource Group**
 
 * Logged into the Azure Portal.
 * Searched for Resource Groups in the search bar and clicked + Create.
 * Named my resource group MyLabRG and selected the Central US region (to match my preferences).
 * Clicked Review + Create and then Create to set it up.
 
-2. Create a Virtual Machine
+**2. Create a Virtual Machine**
 
 * Navigated to Virtual Machines from the portal search.
 * Clicked + Create and chose Azure Virtual Machine.
@@ -26,18 +26,18 @@ This lab guides me through creating a Virtual Machine (VM) on Microsoft Azure, c
     * Administrator Account: Set my username (e.g., azureuser) and a secure password.
 * Left other options as default and proceeded to the next steps.
 
-3. Configure Disks
+**3. Configure Disks**
    
 * Kept the default OS disk settings and clicked Next: Networking.
 
-4. Set Up Networking
+**4. Set Up Networking**
 
 * Allowed Azure to create a new Virtual Network and subnet automatically.
 * Set the Public IP to enabled by creating a new public IP resource named 'enabled'.
 * For inbound port rules, selected SSH (22) to enable secure remote access.
 * Reviewed and created the VM, waiting a few minutes for deployment.
 
-5. Connecting to the VM
+**5. Connecting to the VM**
 
 * After deployment, I found the VM’s public IP address in the overview tab (e.g., 20.221.58.242).
 * Opened a terminal on my desktop (PowerShell on Windows).
@@ -45,11 +45,11 @@ This lab guides me through creating a Virtual Machine (VM) on Microsoft Azure, c
 * Entered my password (note: the terminal does not show characters while typing).
 * Successfully logged in and saw the “Welcome to Ubuntu” message.
 
-Cleanup
+**Cleanup**
 
 To avoid charges, I deleted my resource group MyLabRG from the portal by selecting Resource Groups and clicking Delete Resource Group.
 
-Summary
+**Summary**
 
 This provided me with practical experience in deploying a Linux VM on Azure, setting up network access, and securely connecting using SSH. It helped me understand cloud VM provisioning, resource management, and basic Linux server administration.
 
